@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image:url("link.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease, transform 0.3s ease;
+    position: relative;
+}
+
+h1, h3, input[type="text"], button {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #666666;
+}
+
+input[type="text"], button {
+    width: calc(100% - 110px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+.button1 {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.copied {
+    background-color: #2196F3;
+    color: white;
+}
+
+.qr {
+    background-color: #FF9800;
+    color: white;
+}
+
+#copy {
+    margin-left: 10px;
+}
+
+#output {
+    width: calc(100% - 120px);
+}
+
+#btn {
+    margin-top: 10px;
+}
+
+body:hover .container,
+body:focus .container {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+body:hover h1,
+body:focus h1,
+body:hover h3,
+body:focus h3,
+body:hover input[type="text"],
+body:focus input[type="text"],
+body:hover button,
+body:focus button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background: #157ab0;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0b0b0b;
+}
